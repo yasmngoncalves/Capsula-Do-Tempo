@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cápsula do Tempo</title>
+    <style>
+        body {
+            font-family: 'Playpen Sans', sans-serif;
+            background-color: #FFF8E5;
+            margin: 0;
+            padding: 0;
+            color: #231F20;
+            text-align: center;
+        }
+
+        .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #FFEAB2;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            color: #5F2C82;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        blockquote {
+            font-style: italic;
+            color: #5F2C82;
+            border-left: 5px solid #5F2C82;
+            padding-left: 20px;
+            margin: 20px 0;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        footer a {
+            color: #5F2C82;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="email-container">
+        <img src="images/logo.png" alt="Cápsula do Tempo" class="logo">
+        
+        <h1>Você recebeu sua Cápsula do Tempo! ⏳</h1>
+        <p>Olá, {{name}}!</p>
+        <p>O tempo passou e agora você pode ler a mensagem que escreveu para si mesmo(a) no passado. É incrível ver como o futuro nos surpreende, não é?</p>
+
+        <p>Aqui está o que você escreveu para o seu eu do futuro:</p>
+        
+        <blockquote>
+            "{{userMessage}}"
+        </blockquote>
+
+        <p>Esperamos que essa mensagem tenha trazido novas reflexões e talvez até um sorriso para o seu rosto. A vida é uma jornada única, e você tem o poder de moldar cada capítulo.
+
+            Obrigada por fazer parte da Cápsula do Tempo. Nos vemos no futuro! ✨</p>
+
+        <footer>
+            <p>Copyright © <span id="current-year"></span> Cápsula do Tempo – Desenvolvido por Yasmin Gonçalves.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

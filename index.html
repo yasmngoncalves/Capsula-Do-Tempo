@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cápsula do Tempo</title>
+  <link rel="shortcut icon" href="images/favicon-capsula.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="main-header">
+      <a href="index.html"><img src="images/logo.png" class="logo" alt="Cápsula do Tempo" title="Cápsula do Tempo"></a>
+      <p class="text-content">Escreva uma mensagem para o seu eu do futuro e receba daqui a um ano. Suas palavras, guardadas no tempo.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner">
+      <img src="images/banner-capsula.png" alt="Banner representando o conceito de Cápsula do Tempo" class="banner-image">
+    </section>
+
+    <section class="cta-container">
+      <button id="start-button" aria-label="Iniciar o processo de escrita na Cápsula do Tempo">Começar</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Copyright © <span id="current-year"></span> Cápsula do Tempo – Desenvolvido por Yasmin Gonçalves.</p>
+  </footer>
+
+  <script>
+    // Redirecionar para a página de envio
+    document.getElementById('start-button').addEventListener('click', function() {
+      window.location.href = 'envio.html';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cápsula do Tempo</title>
+  <link rel="shortcut icon" href="images/favicon-capsula.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="main-header">
+      <a href="index.html"><img src="images/logo.png" class="logo" alt="Cápsula do Tempo" title="Cápsula do Tempo"></a>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="main-container">
+    <section class="form-container">
+      <!-- Etapa 1: Mensagem -->
+      <div id="step-1" class="form-step">
+        <h3>Escreva para o seu eu do futuro</h3>
+        <p>Compartilhe seus desejos, reflexões ou planos para o futuro. Escreva sobre os momentos que mais importam, os sonhos que quer alcançar ou os conselhos que gostaria de receber. Essa mensagem será um presente para o seu eu do amanhã.</p>
+        
+        <label for="message"></label>
+        <textarea id="message" rows="6" maxlength="3500" placeholder="Escreva aqui sua mensagem para o futuro..."></textarea>
+        <p id="char-count">3500 caracteres restantes</p>
+        <button id="next-button" class="button">Próximo</button>
+      </div>
+
+      <!-- Etapa 2: Dados de Envio -->
+      <div id="step-2" class="form-step" style="display: none;">
+        <h3>Sua mensagem está prestes a viajar no tempo!</h3>
+        <p>Só precisamos do seu melhor e-mail para garantir que sua mensagem chegue ao seu eu do futuro, no momento certo.</p>
+
+        <label for="name">Nome:</label>
+        <input type="name" id="name" placeholder="Digite seu nome" maxlength="50">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Digite seu email" maxlength="60">
+
+        <button id="send-button" class="button">Enviar</button>
+      </div>
+    </section>
+
+    <!-- Mensagem de Sucesso -->
+    <section id="success-message" class="success-message" style="display: none;">
+      <h3 id="final-message-title"></h3>
+      <p id="final-message-details"></p>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>Copyright © <span id="current-year"></span> Cápsula do Tempo – Desenvolvido por Yasmin Gonçalves.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init({
+          publicKey: "ChUQ3GTN55TS877Nd",
+        });
+    })();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

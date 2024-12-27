@@ -1,0 +1,158 @@
+body {
+    font-family: 'Playpen Sans', sans-serif;
+    background-color: #FFF8E5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+header {
+    padding: 10px;
+    margin: 0;
+}
+
+.main-header {
+    max-width: 900px;
+    margin: auto;
+    justify-content: center;
+}
+
+.logo {
+    width: 50%;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.main-container {
+    background-color: #FFEAB2;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 15px;
+    max-width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+    max-width: 65%; 
+    margin: 0 auto -30px;
+    font-size: 1em; 
+    line-height: 1.5; 
+    color: #231F20; 
+}
+  
+.banner-image {
+    width: 100%;
+    height: auto;
+    margin-top: -30px;
+}
+
+/* Para telas menores, troque a imagem */
+@media (max-width: 768px) {
+    .banner-image {
+      content: url("images/banner-capsula-mobile.png");
+      margin: 10px auto;
+      max-width: 70%;
+    }
+}
+
+.cta-container {
+    margin-top: -30px;
+}
+
+textarea {
+    width: 80%; 
+    height: 250px; 
+    margin: 10px;
+    margin-top: 0px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    resize: none;
+}
+
+.form-step h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-step p {
+    font-size: 0.9em; 
+    line-height: 1.4; 
+    color: #555; 
+    width: 80%; 
+    margin: 10px auto; 
+    text-align: center; 
+}
+
+label {
+    display: block; 
+    text-align: left;
+    font-size: 14px; 
+    color: #444; 
+    margin: 10px auto 5px auto; 
+    width: 80%; 
+}
+
+input[type="name"],
+input[type="email"] {
+    width: 80%; 
+    padding: 12px;
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    font-size: 16px; 
+    margin-bottom: 15px; 
+    box-sizing: border-box;
+    display: block; 
+    margin: 0 auto; 
+}
+
+button {
+    display: block; 
+    margin: 0 auto; 
+    margin-top: 10px;
+    padding: 15px 30px;
+    background-color: #5F2C82;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FCB74B;
+}
+
+#success-message {
+    max-width: 70%;
+}
+
+footer {
+    padding: 20px 10px;
+    background-color: #FFF8E5;
+    font-size: 14px;
+    color: #231F20;
+}
+
+
+
